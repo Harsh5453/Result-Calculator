@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Result Calculator</title>
+   <!-- link for font -->
+   <link href= "https://fonts.googleapis.com/css family=Righteous&display=swap"rel="stylesheet"/>
+   <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+   <!-- main html -->
+   
+   <h1 style="color: rgb(58, 63, 58)">
+      <u>Student Result Calculator : </u>
+   </h1>
+   
+   <div class="container">
+   <div class="screen-body-item">
+      <div class="app">
+      <div class="form-group">
+         <!-- option for taking the input -->
+         Enter Student's marks in Chemistry:
+         <input
+         type="text"
+         class="form-control"
+         placeholder=""
+         id="chemistry" />
+   </div>
+   <div class="form-group">
+      Enter Student's marks in Maths:
+      <input
+      type="text"
+      class="form-control"
+      placeholder=""
+      id="maths" />
+   </div>
+   <div class="form-group">
+         Enter Student's marks in Physics:
+         <input
+         type="text"
+         class="form-control"
+         placeholder=""
+         id="phy" />
+      </div>
+      <div>
+         <input
+         type="button"
+         value="Show Result"
+         class="form-button"
+         onclick="calculate()" />
+      </div>
+      </div>
+   </div>
+   <!-- for showing the result-->
+   <div class="form-group showdata">
+      <p id="showdata"></p>
+   </div>
+   </div>
+   <!--adding external javascript file-->
+   <script src="script.js"></script>
+</body>
+</html>
